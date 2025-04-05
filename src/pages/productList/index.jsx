@@ -9,7 +9,7 @@ const ProductListPage = () => {
   return (
     <section className="p-8 bg-[#b5d6d6]">
       <h1 className="text-7xl text-black text-center font-extrabold">
-        PRODUCT <span className="ml-8"></span>DETAILS
+        LIST OF PRODUCTS <span className="ml-2"></span>AVALIABLE
       </h1>
       <div className="grid grid-cols-2 gap-5 mt-10 lg:mt-16 lg:gap-8 lg:grid-cols-4">
         {listOfproducts && listOfproducts.length ? (
