@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ShoppingCartContext } from "../../context";
 
 const ProductListPage = () => {
-  return <div>ProductListPage</div>;
+  const { listOfproducts } = useContext(ShoppingCartContext);
+  console.log(listOfproducts);
+
+  return <section> </section>;
 };
 
 export default ProductListPage;
