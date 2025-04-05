@@ -15,6 +15,7 @@ const ShoppingCartProvider = ({ children }) => {
 
       if (result && result?.products) {
         setListOfProducts(result?.products);
+        setLoading(false);
       } else {
         console.log(error);
       }
@@ -28,7 +29,7 @@ const ShoppingCartProvider = ({ children }) => {
   }, []);
 
   return (
-    <ShoppingCartContext.Provider value={{ listOfproducts }}>
+    <ShoppingCartContext.Provider value={{ listOfproducts, loading }}>
       {children}
     </ShoppingCartContext.Provider>
   );
